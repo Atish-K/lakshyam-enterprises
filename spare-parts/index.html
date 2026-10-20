@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <base href="../">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spare Parts | Lakshyam Enterprises</title>
+  <meta name="description" content="Nozzles, feeders and spare parts for FUJI NXT, Panasonic, Samsung / Hanwha, Yamaha, JUKI, DEK SMT machines.">
+  <meta name="theme-color" content="#0d1b2a">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="spares">
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-head pcb-bg">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="./">Home</a>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          <span aria-current="page">Spare Parts</span>
+        </nav>
+        <h1>Spare parts for SMT machines</h1>
+        <p>Nozzles, feeders, motors, valves, control boards, belts and squeegees for FUJI NXT, Panasonic, Samsung / Hanwha, Yamaha, JUKI and DEK machines.</p>
+      </div>
+    </section>
+
+    <div class="wrap parts-layout">
+      <div>
+        <div class="tabs" id="brand-tabs" role="tablist" aria-label="Machine brand"></div>
+        <div class="parts-card">
+          <div class="parts-head">
+            <div>
+              <h2 id="parts-title">All spare parts</h2>
+              <p id="parts-sub"></p>
+            </div>
+            <form class="side-search" id="parts-search-form" role="search">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+              <label class="sr-only" for="parts-search">Search spare parts</label>
+              <input id="parts-search" type="search" placeholder="Part name or number" autocomplete="off">
+            </form>
+          </div>
+          <table class="parts-table">
+            <thead><tr><th>Part</th><th>Part no.</th><th>Fits</th><th><span class="sr-only">Add to enquiry</span></th></tr></thead>
+            <tbody id="parts-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <aside class="aside-card pcb-bg">
+        <span class="eyebrow">Not listed?</span>
+        <h3 style="margin-top:12px">Send us any part number</h3>
+        <p>This is a selection of frequently requested parts. Share the OEM part number and machine model and we will check availability and price.</p>
+        <form id="part-request">
+          <label class="sr-only" for="pr-part">OEM part number (required)</label>
+          <input id="pr-part" name="part" placeholder="OEM part number *" required autocomplete="off">
+          <label class="sr-only" for="pr-machine">Machine or model</label>
+          <input id="pr-machine" name="machine" placeholder="Machine model, e.g. NXT III" autocomplete="off">
+          <label class="sr-only" for="pr-qty">Quantity</label>
+          <input id="pr-qty" name="qty" placeholder="Quantity" inputmode="numeric" autocomplete="off">
+          <button class="btn btn-primary btn-block" type="submit">Add to enquiry &amp; continue</button>
+        </form>
+      </aside>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/art.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
