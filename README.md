@@ -29,6 +29,16 @@ Edits to `config.js`, product text in `data.js`, images or CSS show up immediate
 
 ## Publish
 
-Upload everything to the root of your web hosting (for example `public_html`). `templates/` and `tools/` are only needed for editing and can be left out.
+**Live site:** https://atish-k.github.io/lakshyam-enterprises/ (GitHub Pages, published from the `main` branch).
+
+To update it, commit and push your changes; GitHub republishes within a minute or two:
+
+```
+git add -A
+git commit -m "Describe the change"
+git push
+```
+
+The site also works on any other host or a custom domain: upload everything to the web root (for example `public_html`). `templates/` and `tools/` are only needed for editing.
 
 The enquiry form opens the visitor's email app or WhatsApp with the enquiry filled in; nothing is stored on a server.
